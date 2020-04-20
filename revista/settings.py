@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
+import django-heroku
 import os
 import environ
 
@@ -131,3 +132,5 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = 'index' # url que redirecciona una vez se conecta el usuario
 LOGIN_URL = 'login' # url a la que redirecciona si se requiere login y no hay un usuario conectado
+
+django_heroku.settings(locals()) 
