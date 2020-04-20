@@ -1,1 +1,3 @@
-web: gunicorn proyecto-revista.wsgi
+web: gunicorn proyecto-revista.wsgi:application --log-file - --log-level debug
+python manage.py collectstatic --noinput
+manage.py migrate
