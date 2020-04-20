@@ -134,4 +134,5 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_REDIRECT_URL = 'index' # url que redirecciona una vez se conecta el usuario
 LOGIN_URL = 'login' # url a la que redirecciona si se requiere login y no hay un usuario conectado
 
+# Activate Django-Heroku.
 django_heroku.settings(locals()) 
