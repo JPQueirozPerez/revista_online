@@ -24,7 +24,7 @@ environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-
+SECRET_KEY = env('DJANGO_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DJANGO_DEBUG')
@@ -142,6 +142,3 @@ LOGIN_URL = 'login' # url a la que redirecciona si se requiere login y no hay un
 
 # Activate Django-Heroku.
 django_heroku.settings(locals()) 
-
-
-SECRET_KEY = env('DJANGO_SECRET_KEY')
