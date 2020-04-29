@@ -3,6 +3,8 @@ from django.core.paginator import Paginator
 from .models import MagazineApp
 from .forms import StoryForm
 from django.contrib.auth.decorators import login_required
+from django.shortcuts import render 
+
 
 # Create your views here.
 def index(request):
