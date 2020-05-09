@@ -7,16 +7,16 @@
   </div>
   {% if user.is_authenticated %}
       <div class="form-inline my-2 my-lg-0">
-      <p class="m-1">Conectado como {{ user.username }}</p>
+      <p class="m-1 font-weight-bold">Bienvenido, {{ user.username }}</p>
       <a href="{% url 'logout' %}">
-      <button class="btn btn-dark my-2 my-sm-0" type="submit">Logout</button></a>
+      <button class="btn btn-dark my-2 my-sm-0 btn-sm" type="submit">Logout</button></a>
     </div>
   {% else %}
   <div class="form-inline my-2 my-lg-0">
   <a href="{% url 'register' %}">
-      <button class="btn btn-secondary my-2 my-sm-0 m-1" type="submit">Registro</button></a>
+      <button class="btn btn-secondary my-2 my-sm-0 m-1 btn-sm" type="submit">Registro</button></a>
     <a href="{% url 'login' %}">
-      <button class="btn btn-dark my-2 my-sm-0" type="submit">Login</button></a>
+      <button class="btn btn-dark my-2 my-sm-0 btn-sm" type="submit">Login</button></a>
     </div>
   {% endif %}
   <div class="collapse navbar-collapse" id="navbarNav">

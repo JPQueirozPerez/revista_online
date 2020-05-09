@@ -5,12 +5,12 @@
 
 {% block content %}
 
-<!-- For loop que pinta las obras guardadas en la base de datos -->
+<!-- Loop que pinta las obras guardadas en la base de datos -->
 <div class='container'>
     {% for objects in object %}
     <div class="pure-g-r content-ribbon">
         <div class="pure-u-1">
-            <div class="container">
+            <div class="container border border-success">
                 <div class="row">
                      <div class="col-sm">
                         <h4 class="content-subhead">{{ objects.title }}</h4>
@@ -24,7 +24,6 @@
         </div>
     </div>
     {% endfor %}
-
 <!-- Paginación -->
 <nav aria-label="Page navigation example">
   <ul class="pagination">
