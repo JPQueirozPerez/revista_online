@@ -1,7 +1,9 @@
 {% extends 'base.html' %}
 {% block title %}Detalles de las obras{% endblock %}
+
+{% block subject %}Detalles de las obras{% endblock %}
+
 {% block content %}
-<h1>Detalles de las obras</h1>
 
 <h3>{{ object.title }}</h3>
 <p>{% if object.synopsis != None and object.synopsis != '' %}{{ object.synopsis }}{% else %} Sin sinopsis por el momento.{% endif  %}</p>

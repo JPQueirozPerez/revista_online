@@ -1,11 +1,12 @@
 {% extends 'base.html' %}
 
-{% block title %}Envía tu historia{% endblock %}
+{% block title %}Envía tu obra{% endblock %}
+
+{% block subject %}Envía tu obra{% endblock %}
 
 {% load crispy_forms_tags %}
 
 {% block content %}
-<h1>Envía tu obra</h1>
 <div class='container'>
 <form method='POST' novalidate> {% csrf_token %}
     <div class="row">
